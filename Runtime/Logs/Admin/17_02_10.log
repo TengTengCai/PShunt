@@ -1,0 +1,1582 @@
+[ 2017-02-10T16:51:34+08:00 ] ::1 /PShunt/index.php/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2017-02-10T16:51:42+08:00 ] ::1 /PShunt/index.php/Admin/log
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Log
+
+[ 2017-02-10T16:51:52+08:00 ] ::1 /PShunt/index.php/Admin/Login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:index
+
+[ 2017-02-10T16:51:58+08:00 ] ::1 /PShunt/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-02-10T16:52:02+08:00 ] ::1 /PShunt/index.php/Admin/Login/doLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_manger` [ RunTime:0.0020s ]
+SQL: SELECT `m_id` FROM `ps_manger` WHERE `m_name` = 'Admin' AND `m_password` = '123456' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T16:52:04+08:00 ] ::1 /PShunt/index.php/Admin/Student/student.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_student` [ RunTime:0.0030s ]
+SQL: SELECT DISTINCT `si_grade`,`si_profession`,`si_class` FROM `ps_student` WHERE 1   [ RunTime:0.0160s ]
+NOTIC: [8] Undefined variable: str D:\xampp\htdocs\PShunt\App\Admin\Controller\StudentController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T16:52:04+08:00 ] ::1 /PShunt/index.php/Admin/Student/getAllStudentInfo?order=asc&offset=0&limit=20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_student` [ RunTime:0.0020s ]
+SQL: SELECT `si_number`, `si_name`, `si_sex`, `si_grade`, `si_profession`, `si_class` FROM `ps_student` WHERE 1  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T16:52:11+08:00 ] ::1 /PShunt/index.php/Admin/Project/project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0010s ]
+SQL: select max(`branch_id`) as maxid from `ps_tree [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T16:52:12+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T16:56:37+08:00 ] ::1 /PShunt/index.php/Admin/Project/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '李老师' AND c_name = 'JAVA WEB框架技术' )  [ RunTime:0.0000s ]
+SQL: INSERT INTO `ps_course` (`c_name`,`c_teacher`,`c_introduce`) VALUES ('JAVA WEB框架技术','李老师','Web框架是人们在使用某种语言编写Web应用服务端时关于架构的最佳实践。
+有些Web框架是从实际的Web项目抽取出来的，也就是说，做一个具体的应用项目时，采取的架构比较理想，就把这部分和领域无关，而仅和Web的请求和响 应处理有关的设计拿出来，形成一个基础，在开发别的应用项目的时候则可以从这基础做起，让开发者更关注领域问题，而不是Web的请求和响应的控制。
+也有些Web框架是直接设计出来的，很多Web框架在设计的时候也都借鉴了别的框架，吸取优点，修改不足，并根据自己的框架的定位，在特定方面有自己的发 挥，形成了自己的特点，比如有的web框架追求的是松耦合性，层次，结构之间都不密切绑定，有的Web框架则追求敏捷性，强调约定而不是配置。
+Java 的 Web框架虽然各不相同，但基本也都是遵循特定的路数的：使用Servlet或者Filter拦截请求，使用MVC的思想设计架构，使用约定，XML或 Annotation实现配置，运用Java面向对象的特点，面向抽象实现请求和响应的流程，支持Jsp，Freemarker，Velocity等视 图。') [ RunTime:0.1380s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '李老师' AND c_name = 'JAVA WEB框架技术' )  [ RunTime:0.0000s ]
+SQL: UPDATE `ps_tree` SET `course_id`='10' WHERE ( branch_id = 25 ) [ RunTime:0.1220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T16:56:38+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T17:02:08+08:00 ] ::1 /PShunt/index.php/Admin/Project/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '杨老师' AND c_name = '.NET WEB开发技术' )  [ RunTime:0.0000s ]
+SQL: INSERT INTO `ps_course` (`c_name`,`c_teacher`,`c_introduce`) VALUES ('.NET WEB开发技术','杨老师','.NET的Web开发技术是.NET环境下进行Web编程的一门重要课程。内容包括Web原理及环境部署、HTML基础、CSS应用、JavaScript基础、ASP.NET技术；重点介绍ASP.NET技术及相关的数据库应用开发，通过实例介绍各种技术的特点及应用。 通过本课程的学习，使学员了解Web应用开发技术的发展与现状，了解WEB原理、开发过程和环境部署；能够熟练掌握HTML语言，CSS，JavaScript，掌握利用ASP.NET进行Web应用开发的特点；掌握各种控件的用法和ADO.NET相关技术，掌握数据源控件和数据绑定控件的用法；具备运用面向对象的思想和ASP.NET相关知识对Web网站进行需求分析、进而进行设计和开发的能力。学员学完该课程后，应能利用ASP.NET开发简单的Web应用程序。') [ RunTime:0.0880s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '杨老师' AND c_name = '.NET WEB开发技术' )  [ RunTime:0.0010s ]
+SQL: UPDATE `ps_tree` SET `course_id`='11' WHERE ( branch_id = 15 ) [ RunTime:0.0930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T17:02:10+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T17:03:07+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 11  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T17:03:08+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0010s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 11  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T17:05:50+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 11  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T17:05:51+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 11  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T17:13:35+08:00 ] ::1 /PShunt/index.php/Admin/Project/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0040s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '张老师' AND c_name = '.NET程序设计' )  [ RunTime:0.0000s ]
+SQL: INSERT INTO `ps_course` (`c_name`,`c_teacher`,`c_introduce`) VALUES ('.NET程序设计','张老师','《NET框架程序设计》以.NET Framework 2.0 和Visual Studio 2005 为平台，主要介绍基于C#的 NET框架下应用程序的开发，包括NET框架下应用程序的执行和编译机制，以及在NET框架下经常用到的一些命名空间和使用方法。《NET框架程序设计》源于丰富的教学实践，既有原理性的说明，也有指导性的介绍； 语言简洁，思路清楚，图文并茂，寓深刻的理论于简单的例子中，易于理解和掌握； 适合于课堂教学，尤其是边讲边练的教学。同时，书中的案例都是在编程中经常用到的实际案例，所以也适合于案例式教学。') [ RunTime:0.1070s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '张老师' AND c_name = '.NET程序设计' )  [ RunTime:0.0000s ]
+SQL: UPDATE `ps_tree` SET `course_id`='12' WHERE ( branch_id = 16 ) [ RunTime:0.0530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T17:13:36+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T17:17:26+08:00 ] ::1 /PShunt/index.php/Admin/Project/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '王老师' AND c_name = '数据库脚本语言' )  [ RunTime:0.0000s ]
+SQL: INSERT INTO `ps_course` (`c_name`,`c_teacher`,`c_introduce`) VALUES ('数据库脚本语言','王老师','生成数据库项目时，预先部署脚本、数据库对象定义和后期部署脚本合并为一个生成脚本。只能指定一个预先部署脚本和一个后期部署脚本，但可在预先部署脚本和后期部署脚本中包含其他脚本。数据库脚本是包含不属于数据库架构定义的Transact-SQL(T-SQL)语句或实用工具（如 SQLCMD）的附加文件。可以将数据库脚本用作部署步骤的一部分（预先部署和后期部署脚本），数据库脚本也可以是存储在数据库项目中的常规管理脚本。
+在对架构对象执行数据库重构操作期间，可以自动更新包含执行该操作期间进行重命名的数据库对象的任何脚本。
+“脚本”文件夹支持以下操作：
+添加新项 添加文件夹 添加脚本 从项目中排除 版本控制操作（如签入、签出等）剪切 复制 删除
+重命名 属性
+“脚本”文件夹中包含的脚本支持以下操作：
+打开 打开方式 项目中排除 版本控制操作（如签入、签出等）剪切 复制 删除重命名属性') [ RunTime:0.0810s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '王老师' AND c_name = '数据库脚本语言' )  [ RunTime:0.0000s ]
+SQL: UPDATE `ps_tree` SET `course_id`='13' WHERE ( branch_id = 17 ) [ RunTime:0.0770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T17:17:32+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0010s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T17:22:11+08:00 ] ::1 /PShunt/index.php/Admin/Project/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0050s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '刘老师' AND c_name = '测试技术' )  [ RunTime:0.0000s ]
+SQL: INSERT INTO `ps_course` (`c_name`,`c_teacher`,`c_introduce`) VALUES ('测试技术','刘老师','测试（measurement and test）是测量与试验的概括，是人们借助于一定的装置，获取被测对象有相关信息的过程。测试包含两方面的含义：一是测量，指的是使用测试装置通过实验来获取被测量的量值；二是试验，指的是在获取测量值的基础上，借助于人、计算机或一些数据分析与处理系统，从被测量中提取被测量对象的有关信息。测试分为动态测试和静态测试。如果被测量不随时间变化，称这样的量为静态量，相应的测试成为静态测试；反之为动态。') [ RunTime:0.0560s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '刘老师' AND c_name = '测试技术' )  [ RunTime:0.0000s ]
+SQL: UPDATE `ps_tree` SET `course_id`='14' WHERE ( branch_id = 18 ) [ RunTime:0.0550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T17:22:12+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T17:23:29+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 14  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T17:23:29+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 14  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T17:23:35+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 13  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-02-10T17:23:36+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 13  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T17:25:47+08:00 ] ::1 /PShunt/index.php/Admin/Project/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0010s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '黄老师' AND c_name = '网络工程技术' )  [ RunTime:0.0010s ]
+SQL: INSERT INTO `ps_course` (`c_name`,`c_teacher`,`c_introduce`) VALUES ('网络工程技术','黄老师','网络工程技术是一个专业名称，培养学生系统理解和掌握计算机网络与软件工程的理论、相关知识和技能，能构建网络、分析和排除常见网络故障，维护网络的安全和正常运行；能从事计算机应用软件的测试、开发，计算机网络系统管理与维护工作的应用型专业人才。计算机基础与操作应用、计算机组装维修与局域网构建、计算机网络工程、电子商务、Cisco CCNA网络工程、REDHAT Linux操作系统、计算机网络安全分析管理、WEB网站设计、SQL Server数据库编程与管理、ASP商务网站与企业应用系统开发、VB企业应用系统开发、.NET编程与系统开发。') [ RunTime:0.1010s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '黄老师' AND c_name = '网络工程技术' )  [ RunTime:0.0000s ]
+SQL: UPDATE `ps_tree` SET `course_id`='15' WHERE ( branch_id = 19 ) [ RunTime:0.1040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T17:26:07+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T17:29:29+08:00 ] ::1 /PShunt/index.php/Admin/Project/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '罗老师' AND c_name = '信息安全' )  [ RunTime:0.0010s ]
+SQL: INSERT INTO `ps_course` (`c_name`,`c_teacher`,`c_introduce`) VALUES ('信息安全','罗老师','
+信息安全主要包括以下五方面的内容，即需保证信息的保密性、真实性、完整性、未授权拷贝和所寄生系统的安全性。信息安全本身包括的范围很大，其中包括如何防范商业企业机密泄露、防范青少年对不良信息的浏览、个人信息的泄露等。网络环境下的信息安全体系是保证信息安全的关键，包括计算机安全操作系统、各种安全协议、安全机制（数字签名、消息认证、数据加密等），直至安全系统，如UniNAC、DLP等，只要存在安全漏洞便可以威胁全局安全。信息安全是指信息系统（包括硬件、软件、数据、人、物理环境及其基础设施）受到保护，不受偶然的或者恶意的原因而遭到破坏、更改、泄露，系统连续可靠正常地运行，信息服务不中断，最终实现业务连续性。
+信息安全学科可分为狭义安全与广义安全两个层次，狭义的安全是建立在以密码论为基础的计算机安全领域，早期中国信息安全专业通常以此为基准，辅以计算机技术、通信网络技术与编程等方面的内容；广义的信息安全是一门综合性学科，从传统的计算机安全到信息安全，不但是名称的变更也是对安全发展的延伸，安全不在是单纯的技术问题，而是将管理、技术、法律等问题相结合的产物。本专业培养能够从事计算机、通信、电子商务、电子政务、电子金融等领域的信息安全高级专门人才。
+') [ RunTime:0.0990s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '罗老师' AND c_name = '信息安全' )  [ RunTime:0.0010s ]
+SQL: UPDATE `ps_tree` SET `course_id`='16' WHERE ( branch_id = 20 ) [ RunTime:0.0540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T17:29:30+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T17:31:12+08:00 ] ::1 /PShunt/index.php/Admin/Project/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '白老师' AND c_name = '计算机组成原理' )  [ RunTime:0.0000s ]
+SQL: INSERT INTO `ps_course` (`c_name`,`c_teacher`,`c_introduce`) VALUES ('计算机组成原理','白老师','计算机组成原理是计算机专业一门重要的主干课程。课程的任务是使学生掌握计算机组成部件的工作原理、逻辑实现、设计方法及将各部件连接成整机的方法,建立CPU级和硬件系统级的整机概念,培养学生对计算机硬件系统的分析、开发与设计的能力。该课程是计算机硬件系列课程的重要先修基础。') [ RunTime:0.0820s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '白老师' AND c_name = '计算机组成原理' )  [ RunTime:0.0000s ]
+SQL: UPDATE `ps_tree` SET `course_id`='17' WHERE ( branch_id = 21 ) [ RunTime:0.0660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T17:31:13+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T17:34:21+08:00 ] ::1 /PShunt/index.php/Admin/Project/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0010s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '赵老师' AND c_name = '操作系统' )  [ RunTime:0.0000s ]
+SQL: INSERT INTO `ps_course` (`c_name`,`c_teacher`,`c_introduce`) VALUES ('操作系统','赵老师','
+操作系统（Operating System，简称OS）是管理和控制计算机硬件与软件资源的计算机程序，是直接运行在“裸机”上的最基本的系统软件，任何其他软件都必须在操作系统的支持下才能运行。
+操作系统是用户和计算机的接口，同时也是计算机硬件和其他软件的接口。操作系统的功能包括管理计算机系统的硬件、软件及数据资源，控制程序运行，改善人机界面，为其它应用软件提供支持，让计算机系统所有资源最大限度地发挥作用，提供各种形式的用户界面，使用户有一个好的工作环境，为其它软件的开发提供必要的服务和相应的接口等。实际上，用户是不用接触操作系统的，操作系统管理着计算机硬件资源，同时按照应用程序的资源请求，分配资源，如：划分CPU时间，内存空间的开辟，调用打印机等。
+') [ RunTime:0.0650s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '赵老师' AND c_name = '操作系统' )  [ RunTime:0.0010s ]
+SQL: UPDATE `ps_tree` SET `course_id`='18' WHERE ( branch_id = 22 ) [ RunTime:0.0550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T17:34:22+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0010s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T17:35:40+08:00 ] ::1 /PShunt/index.php/Admin/Project/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '魏老师' AND c_name = '信号与系统' )  [ RunTime:0.0000s ]
+SQL: INSERT INTO `ps_course` (`c_name`,`c_teacher`,`c_introduce`) VALUES ('信号与系统','魏老师','信号与线性系统分析，简称信号与系统，是面向电子信息学科的专业基础课，它的基本概念、基本分析方法已经渗透到了信息与通信工程，电路与系统，集成电路工程，生物医学工程，物理电子学，导航雷达、制导与控制，电磁场与微波技术，水声工程，电气工程，动力工程，航空工程，环境工程等领域。
+信号与系统问题无处不在，信息科学已渗透到所有现代自然科学和社会科学领域。学生应熟练地掌握本课程所讲述的基本概念、基本理论和基本分析方法，并利用这些经典理论分析、解释和计算信号、系统及其相互之间约束关系的问题。
+') [ RunTime:0.0760s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '魏老师' AND c_name = '信号与系统' )  [ RunTime:0.0010s ]
+SQL: UPDATE `ps_tree` SET `course_id`='19' WHERE ( branch_id = 23 ) [ RunTime:0.0720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T17:35:41+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-10T17:37:21+08:00 ] ::1 /PShunt/index.php/Admin/Project/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0030s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '彭老师' AND c_name = '通信原理' )  [ RunTime:0.0000s ]
+SQL: INSERT INTO `ps_course` (`c_name`,`c_teacher`,`c_introduce`) VALUES ('通信原理','彭老师','通信到底是什么呢？其实每一本有关通信的书里，一般都会介绍类似下面的三个：
+一、通信的目的：将信息从发端”搬运“到收端。
+二、衡量通信过程的指标：有效性和可靠性。
+三、完成通信的手段：和具体信道和收发端有关系。其实这也是题主问题里所问的一切，那一切的东西，都是手段。
+
+一切通信都离不开这三个方面。就如同你和其他人交流的时候可以通过声音，你想表达的是你的信息，通过的信道是空气。那么你的通信手段就是: 首先将你想说的内容调制到声音频率上，然后发送你想说的话给你的听众，然后你的听众接收到了你的发送信号（声音），然后理解（解调和译码）了你的意思。
+') [ RunTime:0.0820s ]
+SQL: SELECT `c_id` FROM `ps_course` WHERE ( c_teacher = '彭老师' AND c_name = '通信原理' )  [ RunTime:0.0000s ]
+SQL: UPDATE `ps_tree` SET `course_id`='20' WHERE ( branch_id = 24 ) [ RunTime:0.0660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T17:37:23+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0010s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T17:37:53+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0010s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 9  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T17:37:53+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 9  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T17:37:53+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 9  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T17:59:23+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 10  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:00:11+08:00 ] ::1 /PShunt/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T21:00:15+08:00 ] ::1 /PShunt/index.php/Admin/Login/doLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_manger` [ RunTime:0.0060s ]
+SQL: SELECT `m_id` FROM `ps_manger` WHERE `m_name` = 'Admin' AND `m_password` = '123456' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T21:00:16+08:00 ] ::1 /PShunt/index.php/Admin/Student/student.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_student` [ RunTime:0.0030s ]
+SQL: SELECT DISTINCT `si_grade`,`si_profession`,`si_class` FROM `ps_student` WHERE 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: str D:\xampp\htdocs\PShunt\App\Admin\Controller\StudentController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T21:00:16+08:00 ] ::1 /PShunt/index.php/Admin/Student/getAllStudentInfo?order=asc&offset=0&limit=20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_student` [ RunTime:0.0020s ]
+SQL: SELECT `si_number`, `si_name`, `si_sex`, `si_grade`, `si_profession`, `si_class` FROM `ps_student` WHERE 1  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-10T21:00:18+08:00 ] ::1 /PShunt/index.php/Admin/Project/project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: select max(`branch_id`) as maxid from `ps_tree [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:00:18+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0040s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:13:14+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 12  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:13:14+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 12  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:13:14+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0010s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 12  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T21:13:22+08:00 ] ::1 /PShunt/index.php/Admin/Project/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: UPDATE `ps_course` SET `c_teacher`='张老师',`c_introduce`='《NET框架程序设计》以.NET Framework 2.0 和Visual Studio 2005 为平台，主要介绍基于C#的 NET框架下应用程序的开发，包括NET框架下应用程序的执行和编译机制，以及在NET框架下经常用到的一些命名空间和使用方法。《NET框架程序设计》源于丰富的教学实践，既有原理性的说明，也有指导性的介绍； 语言简洁，思路清楚，图文并茂，寓深刻的理论于简单的例子中，易于理解和掌握； 适合于课堂教学，尤其是边讲边练的教学。同时，书中的案例都是在编程中经常用到的实际案例，所以也适合于案例式教学。' WHERE ( c_id = 12 ) [ RunTime:0.0710s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:13:51+08:00 ] ::1 /PShunt/index.php/Admin/Project/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0010s ]
+SQL: UPDATE `ps_course` SET `c_teacher`='张老',`c_introduce`='《NET框架程序设计》以.NET Framework 2.0 和Visual Studio 2005 为平台，主要介绍基于C#的 NET框架下应用程序的开发，包括NET框架下应用程序的执行和编译机制，以及在NET框架下经常用到的一些命名空间和使用方法。《NET框架程序设计》源于丰富的教学实践，既有原理性的说明，也有指导性的介绍； 语言简洁，思路清楚，图文并茂，寓深刻的理论于简单的例子中，易于理解和掌握； 适合于课堂教学，尤其是边讲边练的教学。同时，书中的案例都是在编程中经常用到的实际案例，所以也适合于案例式教学。' WHERE ( c_id = 12 ) [ RunTime:0.1200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:14:12+08:00 ] ::1 /PShunt/index.php/Admin/Project/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: UPDATE `ps_course` SET `c_teacher`='张老师',`c_introduce`='《NET框架程序设计》以.NET Framework 2.0 和Visual Studio 2005 为平台，主要介绍基于C#的 NET框架下应用程序的开发，包括NET框架下应用程序的执行和编译机制，以及在NET框架下经常用到的一些命名空间和使用方法。《NET框架程序设计》源于丰富的教学实践，既有原理性的说明，也有指导性的介绍； 语言简洁，思路清楚，图文并茂，寓深刻的理论于简单的例子中，易于理解和掌握； 适合于课堂教学，尤其是边讲边练的教学。同时，书中的案例都是在编程中经常用到的实际案例，所以也适合于案例式教学。' WHERE ( c_id = 12 ) [ RunTime:0.0830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:14:14+08:00 ] ::1 /PShunt/index.php/Admin/Project/project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0030s ]
+SQL: select max(`branch_id`) as maxid from `ps_tree [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T21:14:15+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-02-10T21:14:17+08:00 ] ::1 /PShunt/index.php/Admin/Project/project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: select max(`branch_id`) as maxid from `ps_tree [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T21:14:17+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0010s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T21:14:47+08:00 ] ::1 /PShunt/index.php/Admin/Project/project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: select max(`branch_id`) as maxid from `ps_tree [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:14:47+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:31:34+08:00 ] ::1 /PShunt/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:31:38+08:00 ] ::1 /PShunt/index.php/Admin/Login/doLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_manger` [ RunTime:0.0040s ]
+SQL: SELECT `m_id` FROM `ps_manger` WHERE `m_name` = 'Admin' AND `m_password` = '123456' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T21:31:39+08:00 ] ::1 /PShunt/index.php/Admin/Student/student.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_student` [ RunTime:0.0040s ]
+SQL: SELECT DISTINCT `si_grade`,`si_profession`,`si_class` FROM `ps_student` WHERE 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: str D:\xampp\htdocs\PShunt\App\Admin\Controller\StudentController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2017-02-10T21:31:40+08:00 ] ::1 /PShunt/index.php/Admin/Student/getAllStudentInfo?order=asc&offset=0&limit=20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_student` [ RunTime:0.0020s ]
+SQL: SELECT `si_number`, `si_name`, `si_sex`, `si_grade`, `si_profession`, `si_class` FROM `ps_student` WHERE 1  [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:31:46+08:00 ] ::1 /PShunt/index.php/Admin/Project/project
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: select max(`branch_id`) as maxid from `ps_tree [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-10T21:31:46+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:31:48+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 9  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-02-10T21:31:50+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0010s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 9  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:31:50+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 9  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:31:50+08:00 ] ::1 /PShunt/index.php/Admin/Project/selectClass?c_id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0020s ]
+SQL: SELECT `c_name`,`c_teacher`,`c_introduce` FROM `ps_course` WHERE `c_id` = 9  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:32:00+08:00 ] ::1 /PShunt/index.php/Admin/Project/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0010s ]
+ERR: 1054:Unknown column 'course_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `ps_course` WHERE ( course_id = '9' ) 
+ERR: 1054:Unknown column 'course_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `ps_course` WHERE ( course_id = '9' ) 
+
+[ 2017-02-10T21:32:00+08:00 ] ::1 /PShunt/index.php/Admin/Project/setCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ps_course` [ RunTime:0.0010s ]
+SQL: UPDATE `ps_course` SET `c_teacher`='王老师',`c_introduce`='主要讲解包括Java Web开发中常用的各种框架和新兴技术，包括Struts 2.0、Spring、Hibernate和Ajax等，这些技术在实际的项目开发中应用广泛。最后《软件工程系列规划教材:Java Web开发技术》结合Struts 2.0+Spring+Hibernate开发了一个虚拟文件管理系统，在系统中展示了Struts 2.0、Spring、Hibernate的具体使用方法。' WHERE ( c_id = 9 ) [ RunTime:0.0740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-10T21:32:02+08:00 ] ::1 /PShunt/index.php/Admin/Project/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ps_tree` [ RunTime:0.0020s ]
+SQL: SELECT branch_id as id,parent_id as pId,`name`,`course_id` FROM `ps_tree`  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=2 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=3 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=4 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=5 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=6 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=7 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=8 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=9 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=10 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=11 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=12 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=14 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=16 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=18 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=19 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=20 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=21 )  [ RunTime:0.0010s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=22 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=23 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `branch_id` FROM `ps_tree` WHERE ( parent_id=25 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
