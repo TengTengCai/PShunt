@@ -47,12 +47,12 @@ class ChoiceController extends Controller{
                 return;
             }
             $data['_logic'] = 'OR';
-            $list = $this->CourseM->field("c_id,c_name,c_teacher")->where($data)->select();
+            $list = $this->CourseM->field("c_id,c_name")->where($data)->select();
             for($i = 0 ; $i<count($list);$i++){
                 $count = $SCourse->field("count(`SNumber`) as count")->where("courseID = %d",$list[$i]['c_id'])->select();
                 $temp = $temp."<tr><th scope=\"row\">".($i+1)."</th><td>"
                     .$list[$i]['c_name']."</td><td>"
-                    .$count[0]['count']."</td><td>".$list[$i]['c_teacher']."</td>";
+                    .$count[0]['count']."</td>";
                     
             }
             return $temp;
@@ -68,6 +68,8 @@ class ChoiceController extends Controller{
         } else {
             echo 'error';
         }
-//        $this->SCourseM->where("SNumber = %d",$this->number)->delete();
     }
+//        $this->SCourseM->where("SNumber = %d",$this->number)->delete();e10adc3949ba59abbe56e057f20f883e
+    
+    
 }

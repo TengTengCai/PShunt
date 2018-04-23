@@ -21,7 +21,6 @@
                             <th>#</th>
                             <th>课程名称</th>
                             <th>人数</th>
-                            <th>教师姓名</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -69,7 +69,7 @@
                 <button id="bt_remove" class="btn btn-info">删除节点</button>
                 <div>
                     <label>为选中叶子节点添加课程信息</label>
-                    <input type="text" class="form-control" id="input_teacher_name" placeholder="教师姓名"></input>
+                    <input type="text" class="form-control" id="input_course_name" placeholder="课程名称"></input>
                     <textarea type="text" class="form-control" id="input_course_introduce" placeholder="课程介绍"></textarea>
                     <button id="bt_addCourse" class="btn btn-info">添加/修改</button>
                 </div>
@@ -168,7 +168,7 @@
                     $.get("/PShunt/index.php/Admin/Project/selectClass?c_id="+treeNode.course_id,function(data,status){
                         if(data){
                             var json = eval('(' + data + ')');
-                            $('#input_teacher_name').val(json.teacher);
+                            $('#input_course_name').val(json.name);
                             $('#input_course_introduce').val(json.introduce);
 //                            var array = data.split("，");
 //                            var temp = array[0];
@@ -222,7 +222,7 @@
                     return;
                 }
                 if(treeNode.course_id){
-                    alert("该节点以添加课程，无法成为父节点")
+                    alert("该节点以添加课程，无法成为父节点");
                     return;
                 }
                 $.get("/PShunt/index.php/Admin/Project/addBranch?pId="+treeNode.id+"&name=new node"+newCount+"&level="+treeNode.level,function(data,status){
@@ -241,14 +241,15 @@
                 var zTree = $.fn.zTree.getZTreeObj("tree"),
                 nodes = zTree.getSelectedNodes(),
                 treeNode = nodes[0];
-                if(treeNode.isPreant){
-                    alert("该父节点无法删除");
-                    return;
-                }
                 if (nodes.length == 0) {
                     alert("请先选择一个节点");
                     return;
                 }
+                if(treeNode.isParent){
+                    alert("该父节点无法删除");
+                    return;
+                }
+                alert(treeNode.id+"-->"+treeNode.course_id);
                  $.get("/PShunt/index.php/Admin/Project/removeBranch?id="+treeNode.id+"&course_id="+treeNode.course_id,function(data,status){
                     alert(data);
                 });
@@ -262,11 +263,16 @@
                 var zTree = $.fn.zTree.getZTreeObj("tree"),
                 nodes = zTree.getSelectedNodes(),
                 treeNode =  nodes[0];
-                var str = treeNode.name,
-                teacherName = $('#input_teacher_name').val(),
+                var courseName = $('#input_course_name').val(),
                 courseIntroduce = $('#input_course_introduce').val();
+//        str = treeNode.name,
+//                alert(122);
                 if (nodes.length == 0) {
-                    alert("请先选择一个节点");
+                    alert("请先选择一个子节点");
+                    return;
+                }
+                if(courseName.length === 0 || courseIntroduce.length === 0){
+                    alert("输入不能为空");
                     return;
                 }
                 if(treeNode.isParent || treeNode.level < 4){
@@ -275,35 +281,28 @@
                 }
                 if(treeNode.course_id){
 //                    alert("该节点已经绑定课程无法添加子节点，请删除后重新添加结点。");
-                    if(teacherName.length == 0 || courseIntroduce.length == 0){
-                        alert("不能为空");
-                        return;
-                    }
                     $.post("/PShunt/index.php/Admin/Project/setCourse",{
                         course_id:treeNode.course_id,
-                        teacherName:teacherName,
+                        courseName:courseName,
                         introduce:courseIntroduce
                     },function(data,status){
                         alert(data);
-                        $('#input_teacher_name').val("");
-                        $('#input_course_introduce').val("");
+                        
                     });
-                    
+                }else{
+                    $.post("/PShunt/index.php/Admin/Project/addCourse1",{
+                        tId:treeNode.id,
+                        courseName:courseName,
+                        introduce:courseIntroduce
+                    },function(data,status){
+                        alert(data);
+                    });
                 }
-                $.post("/PShunt/index.php/Admin/Project/addCourse",{
-                    tId:treeNode.id,
-                    course_id:treeNode.course_id,
-                    courseName:str.substring(18,str.length-7),
-                    teacherName:teacherName,
-                    introduce:courseIntroduce
-                },function(data,status){
-                    alert(data);
-                });
-               setTimeout(function () { 
-                    zTree.reAsyncChildNodes(null, "refresh");
-                    zTree.expandAll(true);
-                },1000);
-                $('#input_teacher_name').val("");
+                setTimeout(function () { 
+                        zTree.reAsyncChildNodes(null, "refresh");
+                        zTree.expandAll(true);
+                    },1000);
+                $('#input_course_name').val("");
                 $('#input_course_introduce').val("");
             }
             $(document).ready(function(){

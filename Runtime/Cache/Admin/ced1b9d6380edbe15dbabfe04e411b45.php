@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lumino - Dashboard</title>
+<title>选课情况</title>
 
 <link href="<?php echo ADMIN_CSS_URL;?>bootstrap.min.css" rel="stylesheet"/>
 <link href="<?php echo ADMIN_CSS_URL;?>bootstrap-table.css" rel="stylesheet"/>

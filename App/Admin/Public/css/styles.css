@@ -912,7 +912,7 @@ h1.page-header {
     margin-left: 5px;
     margin-right: 5px;
 }
-#input_teacher_name{
+#input_course_name{
     width: 200px;
     margin-left: 5px;
     margin-right: 5px;
@@ -968,6 +968,8 @@ h1.page-header {
 }
 #input_course_introduce{
     margin-left: 5px;
+    width: 500px;
+    height: 300px;
 }
 .select_button{
     folat:left;

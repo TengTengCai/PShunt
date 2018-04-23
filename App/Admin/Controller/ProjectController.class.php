@@ -53,7 +53,6 @@ class ProjectController extends Controller {
         $tId = $_POST['tId'];
         $course_id = $_POST['course_id'];
         $courseName = $_POST['courseName'];
-        $teacherName = $_POST['teacherName'];
         $introduce = $_POST['introduce'];
         $course = new CourseModel();
         $tree = new TreeModel();
@@ -61,12 +60,12 @@ class ProjectController extends Controller {
         //判断之前是否存在有课程的id，有就进行修改操作，没有就进行写入操作
         if($course_id){
             echo 'course_id不为空';
-            $data3['c_teacher'] = $teacherName;
+
             $data3['c_introduce'] = $introduce;
             $course->data($data3)->where("course_id = '%s'",$course_id)->select();
         }  else {
             //教师，课程是否同时重名
-            $list = $course->field('c_id')->where("c_teacher = '%s' AND c_name = '%s'",$teacherName,$courseName)->select();
+            $list = $course->field('c_id')->where("c_name = '%s'",$courseName)->select();
 //            dump($list);
             if($list){
                 //修改树形结构相关结点的courseId
@@ -76,10 +75,9 @@ class ProjectController extends Controller {
             }  else {
                 //添加新的课程进course表单，同时在tree中添加节点
                 $data2['c_name'] = $courseName;
-                $data2['c_teacher'] = $teacherName;
                 $data2['c_introduce'] = $_POST['introduce'];
                 $course->add($data2);
-                $list = $course->field('c_id')->where("c_teacher = '%s' AND c_name = '%s'",$teacherName,$courseName)->select();
+                $list = $course->field('c_id')->where("c_name = '%s'",$courseName)->select();
 //                dump($list);
                 $data4['course_id'] = $list[0]['c_id'];
 //                dump($data4);
@@ -88,12 +86,29 @@ class ProjectController extends Controller {
             }
         }
     }
+    function addCourse1(){
+        $tId = $_POST['tId'];
+        $courseName = $_POST['courseName'];
+        $introduce = $_POST['introduce'];
+        $course = new CourseModel();
+        $tree = new TreeModel();
+        $course->data("c_name=".$courseName."&c_introduce=".$introduce)->add();
+        $list = $course->field("c_id")->where("c_name = %d",$courseName)->select();
+        
+        if ($list){
+            $tree->data("course_id=".$list[0]['c_id']."&name=".$courseName)->where("branch_id = %d",$tId)->save();
+            echo '成功';
+        } else {
+            echo 'error';
+        }
+        
+    }
     /*
      * 修改course中的数据
      */
     function setCourse(){
         $c_id = $_POST['course_id'];
-        $data['c_teacher'] = $_POST['teacherName'];
+        $data['c_name'] = $_POST['courseName'];
         $data['c_introduce'] = $_POST['introduce'];
         $course = new CourseModel();
         if($course->data($data)->where("c_id = %d",$c_id)->save()){
@@ -173,10 +188,10 @@ class ProjectController extends Controller {
     function selectClass(){
         $data['c_id'] = $_GET['c_id'];
         $course = new CourseModel();
-        $list = $course->field('c_name,c_teacher,c_introduce')->where($data)->select();
+        $list = $course->field('c_name,c_introduce')->where($data)->select();
 //        dump($list);
         if($list){
-            $map['teacher'] = $list[0]['c_teacher'];
+            $map['name'] = $list[0]['c_name'];
             $map['introduce'] = $list[0]['c_introduce'];
             echo json_encode($map);
 //            echo '老师：'.$list[0]['c_teacher'].'，';

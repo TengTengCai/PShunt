@@ -44,7 +44,7 @@
 		
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
 		<ul class="nav menu">
-			<li class="active"><a href="/PShunt/index.php/Admin/Student/student.html"><span class="glyphicon glyphicon-dashboard"></span>学生信息</a></li>
+			<li class="active"><a href="/PShunt/index.php/Admin/Student/student"><span class="glyphicon glyphicon-dashboard"></span>学生信息</a></li>
 			<li><a href="/PShunt/index.php/Admin/Project/project"><span class="glyphicon glyphicon-th"></span>课程信息</a></li>
 			<li><a href="/PShunt/index.php/Admin/Result/result"><span class="glyphicon glyphicon-stats"></span>选课情况</a></li>
 			<li><a href="tables.html"><span class="glyphicon glyphicon-list-alt"></span> Tables</a></li>

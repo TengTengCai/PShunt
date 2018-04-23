@@ -179,4 +179,5 @@ class UserController extends Controller{
         }
 //        echo $array[0];
     }
+    
 }
